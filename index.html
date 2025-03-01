@@ -51,8 +51,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="col-span-2 rounded-lg bg-slate-200 flex items-center justify-left gap-5 p-2 pl-10 bg-gradient-to-r from-indigo-500 to-indigo-300">
+                    <div id="btn-blogs" class="cursor-pointer col-span-2 rounded-lg bg-slate-200 flex items-center justify-left gap-5 p-2 pl-10 bg-gradient-to-r from-indigo-500 to-indigo-300">
                         <img src="assets/board.png" alt="" />
                         <h3 class="tracking-wider text-2xl text-white">
                             Discover Something <br />
@@ -214,6 +213,14 @@
             </section>
         </section>
     </main>
+
+
+    
+    <script>
+        document.getElementById('btn-blogs').addEventListener('click', function() {
+            window.location.href = 'blogs.html';
+        });
+    </script>
 </body>
 
 </html>

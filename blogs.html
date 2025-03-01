@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-blue-100 py-5 font-[Poppins]">
+    <header class="container mx-auto py-5 px-6 rounded-xl bg-gray-50">
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <img src="assets/logo.png" alt="" />
+          <h1 class="text-4xl">Dev<strong>Board</strong></h1>
+        </div>
+        <button
+          id="btn-backtodesk"
+          class="btn bg-indigo-600 font-medium text-white rounded-lg"
+        >
+          Back To Desk
+        </button>
+      </nav>
+    </header>
+    <main class="container mx-auto">
+      <h2 class="font-bold text-2xl text-center my-5">Blogs</h2>
+
+      <!-- Question Answer Section -->
+      <section class="flex flex-col gap-5">
+        <!-- q1 -->
+        <div class="rounded-lg p-4 bg-gray-50">
+          <h3 class="text-lg font-bold">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h3>
+          <hr class="border-dashed border-t-2 border-gray-200 my-4" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            totam ipsa qui praesentium tempora eveniet provident veniam odit
+            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
+            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
+            numquam ex tenetur. Modi.
+          </p>
+        </div>
+        <!-- q2 -->
+        <div class="rounded-lg p-4 bg-gray-50">
+          <h3 class="text-lg font-bold">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h3>
+          <hr class="border-dashed border-t-2 border-gray-200 my-4" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            totam ipsa qui praesentium tempora eveniet provident veniam odit
+            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
+            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
+            numquam ex tenetur. Modi.
+          </p>
+        </div>
+        <!-- q3 -->
+        <div class="rounded-lg p-4 bg-gray-50">
+          <h3 class="text-lg font-bold">
+            Question-3: What is event delegation in the DOM?
+          </h3>
+          <hr class="border-dashed border-t-2 border-gray-200 my-4" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            totam ipsa qui praesentium tempora eveniet provident veniam odit
+            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
+            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
+            numquam ex tenetur. Modi.
+          </p>
+        </div>
+        <!-- q4 -->
+        <div class="rounded-lg p-4 bg-gray-50">
+          <h3 class="text-lg font-bold">
+            Question-4: What is event bubbling in the DOM?
+          </h3>
+          <hr class="border-dashed border-t-2 border-gray-200 my-4" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            totam ipsa qui praesentium tempora eveniet provident veniam odit
+            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
+            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
+            numquam ex tenetur. Modi.
+          </p>
+        </div>
+        <!-- q5 -->
+        <div class="rounded-lg p-4 bg-gray-50">
+          <h3 class="text-lg font-bold">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h3>
+          <hr class="border-dashed border-t-2 border-gray-200 my-4" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+            totam ipsa qui praesentium tempora eveniet provident veniam odit
+            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
+            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
+            numquam ex tenetur. Modi.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById("btn-backtodesk")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>
