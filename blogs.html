@@ -40,76 +40,134 @@
       <!-- Question Answer Section -->
       <section class="flex flex-col gap-5">
         <!-- q1 -->
-        <div class="rounded-lg p-4 bg-gray-50">
+        <div class="rounded-lg p-6 bg-gray-50">
           <h3 class="text-lg font-bold">
             Question-1: What are the different ways to select an element in the
             DOM?
           </h3>
           <hr class="border-dashed border-t-2 border-gray-200 my-4" />
           <p class="text-gray-500">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-            totam ipsa qui praesentium tempora eveniet provident veniam odit
-            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
-            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
-            numquam ex tenetur. Modi.
+            Use `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, or `querySelectorAll` to select elements.
+            <br>
+            <br>
+            <strong>getElementById:</strong> Selects an element by its ID.
+            <br>
+            <strong>getElementsByClassName:</strong> Selects elements by their class name.
+            <br>
+            <strong>getElementsByTagName:</strong> Selects elements by their tag name.
+            <br>
+            <strong>querySelector:</strong> Selects the first element that matches a specified CSS selector(s) in the document.
+            <br>
+            <strong>querySelectorAll:</strong> Selects all elements that match a specified CSS selector(s) in the document.
+            <br>
+            For Instance:
+            <br>
+            <br>
+            <div class="mockup-code w-full bg-base-300 text-stone-900">
+              <pre data-prefix="1"><code>document.getElementById('myId');</code></pre>
+              <br>
+              <pre data-prefix="2"><code>document.getElementsByClassName('myClass');</code></pre>
+              <br>
+              <pre data-prefix="3"><code>document.getElementsByTagName('div');</code></pre>
+              <br>
+              <pre data-prefix="4"><code>document.querySelector('#myId');</code></pre>
+              <pre data-prefix="5"><code>document.querySelector('.myClass');</code></pre>
+              <pre data-prefix="6"><code>document.querySelector('div');</code></pre>
+              <br>
+              <pre data-prefix="7"><code>document.querySelectorAll('.myClass');</code></pre>
+              <pre data-prefix="8"><code>document.querySelectorAll('div');</code></pre>
+            </div>
           </p>
         </div>
+
         <!-- q2 -->
-        <div class="rounded-lg p-4 bg-gray-50">
+        <div class="rounded-lg p-6 bg-gray-50">
           <h3 class="text-lg font-bold">
             Question-2: What is the difference between innerHTML, innerText, and
             textContent ?
           </h3>
           <hr class="border-dashed border-t-2 border-gray-200 my-4" />
           <p class="text-gray-500">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-            totam ipsa qui praesentium tempora eveniet provident veniam odit
-            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
-            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
-            numquam ex tenetur. Modi.
+            `innerHTML` includes HTML tags, `innerText` returns visible text, and `textContent` returns all text, including hidden.<br>
+            <br>
+            <strong>innerHTML:</strong> Sets or returns the HTML content (inner HTML) of an element.
+            <br>
+            <strong>innerText:</strong> Sets or returns the text content of the specified node, and all its descendants.
+            <br>
+            <strong>textContent:</strong> Sets or returns the textual content of a node and all its descendants.
+            <div class="mockup-code w-full bg-base-300 text-stone-900">
+              <pre data-prefix="1"><code>document.getElementById('myId').innerHTML;</code></pre>
+              <pre data-prefix="2"><code>document.getElementById('myId').innerText;</code></pre>
+              <pre data-prefix="3"><code>document.getElementById('myId').textContent;</code></pre>
+            </div>
           </p>
         </div>
+
         <!-- q3 -->
-        <div class="rounded-lg p-4 bg-gray-50">
+        <div class="rounded-lg p-6 bg-gray-50">
           <h3 class="text-lg font-bold">
             Question-3: What is event delegation in the DOM?
           </h3>
           <hr class="border-dashed border-t-2 border-gray-200 my-4" />
           <p class="text-gray-500">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-            totam ipsa qui praesentium tempora eveniet provident veniam odit
-            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
-            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
-            numquam ex tenetur. Modi.
+            Attach one event listener to a parent element to handle events for its children. Use `event.target` to identify the clicked element.<br>
+            For Instance:
+            <div class="mockup-code w-full bg-base-300 text-stone-900">
+              <pre data-prefix="1"><code>document.getElementById('parent').addEventListener('click', function(event) {</code></pre>
+              <pre data-prefix="2"><code>  if (event.target.tagName === 'li') {</code></pre>
+              <pre data-prefix="3"><code>    console.log('List item clicked!');</code></pre>
+              <pre data-prefix="4"><code>  }</code></pre>
+              <pre data-prefix="5"><code>});</code></pre>
+            </div>
+
           </p>
         </div>
+
         <!-- q4 -->
-        <div class="rounded-lg p-4 bg-gray-50">
+        <div class="rounded-lg p-6 bg-gray-50">
           <h3 class="text-lg font-bold">
             Question-4: What is event bubbling in the DOM?
           </h3>
           <hr class="border-dashed border-t-2 border-gray-200 my-4" />
           <p class="text-gray-500">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-            totam ipsa qui praesentium tempora eveniet provident veniam odit
-            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
-            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
-            numquam ex tenetur. Modi.
+            An event starts from the element that triggered it (the target) and then "bubbles up" through its ancestors in the DOM tree.For example, if you click on a button inside a div, the click event doesn’t just stay on the button. It bubbles up to the div, then to its parent, and so on, all the way up to the document object (unless someone stops it along the way).
+            For Instance:
+            <div class="mockup-code w-full bg-base-300 text-stone-900">
+              <pre data-prefix="1"><code>document.getElementById('parent').addEventListener('click', function(event) {</code></pre>
+              <pre data-prefix="2"><code>  console.log('Clicked on parent!');</code></pre>
+              <pre data-prefix="3"><code>});</code></pre>
+              <pre data-prefix="4"><code>document.getElementById('child').addEventListener('click', function(event) {</code></pre>
+              <pre data-prefix="5"><code>  console.log('Clicked on child!');</code></pre>
+              <pre data-prefix="6"><code>});</code></pre>
+            </div>
           </p>
         </div>
         <!-- q5 -->
-        <div class="rounded-lg p-4 bg-gray-50">
+        <div class="rounded-lg p-6 bg-gray-50">
           <h3 class="text-lg font-bold">
             Question-5: How do you create, add, and remove elements using
             JavaScript?
           </h3>
           <hr class="border-dashed border-t-2 border-gray-200 my-4" />
           <p class="text-gray-500">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-            totam ipsa qui praesentium tempora eveniet provident veniam odit
-            natus molestias mollitia optio, impedit ab cupiditate quasi a vitae
-            voluptatum vel. Tempora pariatur mollitia porro odio deserunt
-            numquam ex tenetur. Modi.
+            To create a new element, use `document.createElement()`. Pass the tag name (like `div` or `p`) to create the element.<br>
+            For Instance:
+            <div class="mockup-code w-full bg-base-300 text-stone-900">
+              <pre data-prefix="1"><code>const newDiv = document.createElement('div');</code></pre>
+            </div>
+            <br>
+            To add the element to the DOM, use `appendChild()` or `insertBefore()` method.<br>
+            For Instance:
+            <div class="mockup-code w-full bg-base-300 text-stone-900">
+              <pre data-prefix="1"><code>document.body.appendChild(newDiv);</code></pre>
+              <pre data-prefix="2"><code>document.body.insertBefore(newDiv, document.body.firstChild);</code></pre>
+            </div>
+            <br>
+            To remove the element from the DOM, use `removeChild()` method.<br>
+            For Instance:
+            <div class="mockup-code w-full bg-base-300 text-stone-900">
+              <pre data-prefix="1"><code>document.body.removeChild(newDiv);</code></pre>
+            </div>
           </p>
         </div>
       </section>
