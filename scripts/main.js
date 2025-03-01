@@ -61,7 +61,7 @@ for(let i = 0; i < btnCompleted.length; i++) {
     btnCompleted[i].addEventListener('click', function() {
         if (confirm('Board Updated Successfully')) {
             if(parseInt(tasksAssigned.innerText) === 1) {
-                alert('Congrates!!! You have completed all the current task');
+                alert('Congrats!!! You have completed all the current task');
             }
             const taskTitle = btnCompleted[i].parentElement.parentElement.querySelector('.task-title').innerText;
             btnCompleted[i].disabled = true;
