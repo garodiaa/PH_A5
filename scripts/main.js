@@ -25,7 +25,7 @@ function clock() {
     const minute = date.getMinutes();
     const second = date.getSeconds();
     const ampm = hour >= 12 ? 'PM' : 'AM';
-    const twelveHour = hour > 12 ? hour - 12 : hour;
+    const twelveHour = hour % 12 === 0 ? 12 : hour % 12;
     const time = `${twelveHour}:${minute}:${second} ${ampm}`;
     return time;
 }
@@ -60,6 +60,9 @@ for(let i = 0; i < btnCompleted.length; i++) {
     
     btnCompleted[i].addEventListener('click', function() {
         if (confirm('Board Updated Successfully')) {
+            if(parseInt(tasksAssigned.innerText) === 1) {
+                alert('Congrates!!! You have completed all the current task');
+            }
             const taskTitle = btnCompleted[i].parentElement.parentElement.querySelector('.task-title').innerText;
             btnCompleted[i].disabled = true;
             btnCompleted[i].classList.remove('text-white','font-light');
