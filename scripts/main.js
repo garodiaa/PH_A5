@@ -17,3 +17,18 @@ const weekday = date.toLocaleString('en-US', { weekday: 'short' });
 // console.log(day, month, year, weekday);
 document.getElementById('weekday').innerText = weekday;
 document.getElementById('date').innerText = `${month} ${day} ${year}`;
+
+
+// alert after clicking completed button
+const btnCompleted = document.getElementById('btn-completed');
+
+btnCompleted.addEventListener('click', function() {
+    if (confirm('Board Updated Successfully')) {
+        btnCompleted.disabled = true;
+        btnCompleted.classList.remove('text-white','font-light');
+        btnCompleted.classList.add('opacity-50', 'cursor-not-allowed', 'text-gray-800','font-bold');
+    }
+});
+
+// get number of task assigned
+const tasksAssigned = 
