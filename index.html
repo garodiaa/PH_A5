@@ -29,7 +29,7 @@
                     <span class="text-3xl font-bold">23</span>
                 </div>
 
-                <div class="ml-3 rounded-full bg-slate-200 px-2 py-2">
+                <div id="btn-theme" class="cursor-pointer ml-3 rounded-full bg-slate-200 px-2 py-2">
                     <img src="assets/theme-btn.png" alt="" />
                 </div>
             </div>
@@ -64,7 +64,7 @@
                             <img class="w-5" src="assets/calender.png" alt="" />
                         </div>
                         <p class="text-xl">
-                            <span>Wed ,</span><br /><strong>Jul 28 2025</strong>
+                            <span id="weekday"></span> ,<br/><strong id="date"></strong>
                         </p>
                     </div>
                 </section>
@@ -215,7 +215,7 @@
     </main>
 
 
-    
+    <script src="scripts/main.js"></script>
     <script>
         document.getElementById('btn-blogs').addEventListener('click', function() {
             window.location.href = 'blogs.html';
